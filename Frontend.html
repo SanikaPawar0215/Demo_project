@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive WebPage</title>
+    <style>
+        /* General styles */
+        body {
+             overflow-x: hidden;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            margin-left:0vw;
+             margin-right:0vw;
+            background-color: #f0f0f0; 
+        }
+       .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1C75BC;
+            padding: 10px 20px;
+        }
+        .logo img {
+            height: 60px; 
+        }
+        h1{
+            color: #1C75BC;
+        }
+        .nav {
+            display: flex;
+        }
+        .nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .menu-icon {
+            display: none;
+            font-size: 28px;
+            color: white;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .nav {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+            }
+            .nav a {
+                width: 100%;
+                text-align: left;
+                padding: 10px 20px;
+            }
+            .nav.active {
+                display: flex;
+            }
+            .menu-icon {
+                display: block;
+            }
+        }
+         /* Content styles */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .container {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+        .article {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .article img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .article-content {
+            padding: 20px;
+        }
+        .article-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #1C75BC; /* Indian jersey blue */
+        }
+        .article-text {
+            font-size: 1em;
+            color: #333;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; /* Show only the first 2 lines */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        .article-text.full {
+            -webkit-line-clamp: unset; /* Show full text */
+        }
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .actions button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .actions button:hover {
+            background: #0056b3;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+            }
+            .article-title {
+                font-size: 1.2em;
+            }
+            .article-text {
+                font-size: 0.9em;
+            }
+            .actions button {
+                padding: 8px 16px;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                width: 100%;
+            }
+            .actions {
+                flex-direction: column;
+            }
+            .actions button {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+        /* Footer styles */
+        .footer {
+            background-color: #1C75BC; /* Indian jersey blue */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .footer .logo img {
+            height: 70px; /* Adjust logo height */
+            vertical-align: middle;
+        }
+        .footer .nav {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .footer .nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer .address {
+            flex: 1;
+            text-align: center;
+            margin: 10px 0;
+        }
+        @media (max-width: 768px) {
+            .footer .nav {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .container {
+            width: 48%;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .job {
+            padding: 20px;
+        }
+
+        .job img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .job-content {
+            padding: 20px;
+        }
+
+        .job-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #1C75BC;
+        }
+
+        .job-text {
+            font-size: 1em;
+            color: #333;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .job-text.full {
+            -webkit-line-clamp: unset;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .actions button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .actions button:hover {
+            background: #0056b3;
+        }
+
+        .comment-section {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .comment-section textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .comment-section button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .comment-section button:hover {
+            background: #218838;
+        }
+
+        .thank-you-message {
+            display: none;
+            margin-top: 20px;
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+            }
+            .job-title {
+                font-size: 1.2em;
+            }
+            .job-text {
+                font-size: 0.9em;
+            }
+            .actions button {
+                padding: 8px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 100%;
+            }
+            .actions {
+                flex-direction: column;
+            }
+            .actions button {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+       .static {
+    width: 80vw;;
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #1C75BC;
+    border-radius: 5px;
+}
+
+.count-strip {
+    display: table;
+    width: 100%;
+}
+
+.count-item {
+    display: table-cell;
+    text-align: center;
+    padding: 10px;
+}
+
+.count-item i {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.count-item span {
+    display: block;
+    font-weight: bold;
+}
+.likeButton {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px; 
+    }
+
+   
+    .likeButton.clicked {
+        background-color: pink; 
+    }
+    @media screen and (max-width:1000px) {
+        .actions{
+            font-size:1px
+        }
+    }
+    </style>
+</head>
+<body>
+   <div class="header">
+        <a href="#" class="logo"><img src="logo.jpeg" alt="Logo"></a>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="nav" id="nav">
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Article</a>
+            <a href="#">Static count</a>
+            <a href="#">Job section</a>
+            <a href="#">Footer</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("nav");
+            nav.classList.toggle("active");
+        }
+    </script>
+    <br>
+    <br>
+    <center><h1><b>Article Section</b></h1></center>
+    <div class="content">
+        <div class="container" style='margin-right:2vw;'>
+            <div class="article">
+                <img src="India-3-1280x805.jpg.webp" alt="Article Image" style="width:100%;  height:51.5vh;">
+                <div class="article-content">
+                    <div class="article-title">
+                        Indian Team's Quest in ICC T20 World Cup 2024
+                    </div>
+                    <div class="article-text" id="article-text-1">
+                        The Indian cricket team, led by Virat Kohli, is gearing up with optimism and determination for the ICC T20 World Cup 2024. Kohli, renowned for his aggressive batting and tactical acumen, leads a squad poised to make a mark on the global stage. The team comprises a blend of seasoned veterans and promising young talents. Key players include Rohit Sharma, known for his explosive batting and experience in T20s, and Jasprit Bumrah, one of the world's best bowlers with a knack for delivering crucial yorkers and slower balls. Hardik Pandya, a dynamic all-rounder, adds depth to the squad. The team's preparation has been intense, focusing on honing their skills and strategies to tackle various oppositions. With a mix of power hitters, skilled bowlers, and agile fielders, India aims to leverage their strengths and deliver standout performances. The cricketing world eagerly watches as India embarks on this journey, hoping to bring the trophy home and add another chapter to their illustrious cricketing history.
+<br>
+     </div>
+                    <div class="actions">
+                       <button class="likeButton" onclick="likeJob(this)">Like</button>
+                        <button onclick="toggleCommentSection('comment-section-3')">Comment</button>
+                        <button onclick="toggleReadMore('article-text-1')">Read More</button>
+                    </div>
+                <div class="comment-section" id="comment-section-3">
+                        <textarea placeholder="Enter your comment"></textarea>
+                        <button onclick="submitComment('comment-section-3')">Submit</button>
+                    </div>
+                    <div class="thank-you-message" id="thank-you-3">Thank you for your interest!</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="article">
+                <img src="o4nct9mg_rahul-dravid-ani_625x300_30_June_24.webp" alt="Article Image" style="width:100%;  height:51.5vh;">
+                <div class="article-content">
+                    <div class="article-title">
+                        Rahul Dravid's Role in ICC T20 World Cup 2024
+                    </div>
+                    <div class="article-text" id="article-text-2">
+                        Rahul Dravid, renowned for his strategic acumen and meticulous approach to cricket, has taken on a pivotal role in the ICC T20 World Cup 2024. As head coach of the Indian cricket team, Dravid brings a wealth of experience both as a former cricketer and a coach known for nurturing young talent. His previous stints with the India A and Under-19 teams showcased his ability to develop emerging players into match-winners. Dravid's focus on building a cohesive team unit, emphasizing strong fundamentals, and fostering a positive team environment is expected to play a crucial role in India's World Cup campaign. His analytical mindset and calm demeanor provide a perfect balance to the dynamic and aggressive style of captain Virat Kohli, making for a potent combination that aims to guide India to glory on the global stage. The synergy between Dravid's coaching philosophy and the players' skills is anticipated to enhance India's performance, with the ultimate goal of bringing the T20 World Cup trophy home.
+<br>
+
+
+                    </div>
+                    <div class="actions">
+                         <button class="likeButton" onclick="likeJob(this)">Like</button>
+                        <button onclick="toggleCommentSection('comment-section-4')">Comment</button>
+                        <button onclick="toggleReadMore('article-text-2')">Read More</button>
+                    </div>
+                <div class="comment-section" id="comment-section-4">
+                        <textarea placeholder="Enter your comment"></textarea>
+                        <button onclick="submitComment('comment-section-4')">Submit</button>
+                    </div>
+                    <div class="thank-you-message" id="thank-you-4">Thank you for your interest!</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    </div>
+    
+    <center><h1><b>Job Section</b></h1></center>
+    
+         <div class="content">
+        <div class="container" style='margin-left:-1vw;width:50vh;margin-right:2vw;'>
+            <div class="job">
+                <img src="1_jXusXvCfxECPU_Jh9S_E3w.jpg" alt="Job Image" style="width:100%; height:51.5vh;">
+                <div class="job-content">
+                    <div class="job-title">
+                        Front-End Developer
+                    </div>
+                    <div class="job-text" id="job-text-1">
+                        We are looking for a skilled Front-End Developer with experience in HTML, CSS, and JavaScript. The ideal candidate should be able to create responsive designs and have a strong understanding of user experience principles.
+                    </div>
+                    <div class="actions">
+                         <button class="likeButton" onclick="likeJob(this)">Like</button>
+                        <button onclick="toggleCommentSection('comment-section-1')">Comment</button>
+                        <button onclick="toggleReadMore('job-text-1')">Read More</button>
+                    </div>
+                    <div class="comment-section" id="comment-section-1">
+                        <textarea placeholder="Enter your comment"></textarea>
+                        <button onclick="submitComment('comment-section-1')">Submit</button>
+                    </div>
+                    <div class="thank-you-message" id="thank-you-1">Thank you for your interest!</div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="container" style='width:50vh;margin-right:-4vw;'>
+            <div class="job">
+                <img src="1632149528981.jpeg" alt="Job Image" style="width:100%; height:51.5vh;">
+                <div class="job-content">
+                    <div class="job-title">
+                        Back-End Developer
+                    </div>
+                    <div class="job-text" id="job-text-2">
+                        We are seeking a talented Back-End Developer proficient in server-side languages such as Node.js, Python, or Java. The candidate should be capable of managing database interactions and ensuring the responsiveness of applications.
+                    </div>
+                    <div class="actions">
+                         <button class="likeButton" onclick="likeJob(this)">Like</button>
+                        <button onclick="toggleCommentSection('comment-section-2')">Comment</button>
+                        <button onclick="toggleReadMore('job-text-2')">Read More</button>
+                    </div>
+                    <div class="comment-section" id="comment-section-2">
+                        <textarea placeholder="Enter your comment"></textarea>
+                        <button onclick="submitComment('comment-section-2')">Submit</button>
+                    </div>
+                    <div class="thank-you-message" id="thank-you-2">Thank you for your interest!</div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style='margin-left:6vw;width:50vh;'>
+            <div class="job">
+                <img src="Guide_to_Full_Stack_Development_000eb0b2d0.jpg" alt="Job Image" style="width:100%; height:51.5vh;">
+                <div class="job-content">
+                    <div class="job-title">
+                        Full-stack Developer
+                    </div>
+                    <div class="job-text" id="job-text-3">
+                        We are seeking a talented Full stack Developer proficient in server-side languages such as Html, Css, Node.js, Python, or Java. The candidate should be capable of managing database interactions and ensuring the responsiveness of applications.
+                    </div>
+                    <div class="actions">
+                       <button class="likeButton" onclick="likeJob(this)">Like</button>
+                        <button onclick="toggleCommentSection('comment-section-10')">Comment</button>
+                        <button onclick="toggleReadMore('job-text-3')">Read More</button>
+                    </div>
+                    <div class="comment-section" id="comment-section-10">
+                        <textarea placeholder="Enter your comment"></textarea>
+                        <button onclick="submitComment('comment-section-10')">Submit</button>
+                    </div>
+                    <div class="thank-you-message" id="thank-you-10">Thank you for your interest!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleReadMore(jobId) {
+            var jobText = document.getElementById(jobId);
+            if (jobText.classList.contains('full')) {
+                jobText.classList.remove('full');
+                event.target.innerText = 'Read More';
+            } else {
+                jobText.classList.add('full');
+                event.target.innerText = 'Read Less';
+            }
+        }
+
+        function toggleCommentSection(commentSectionId) {
+            var commentSection = document.getElementById(commentSectionId);
+            commentSection.style.display = commentSection.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function submitComment(commentSectionId) {
+            var commentSection = document.getElementById(commentSectionId);
+            commentSection.style.display = 'none';
+            var thankYouMessage = commentSection.nextElementSibling;
+            thankYouMessage.style.display = 'block';
+        }
+
+        
+    
+    </script>
+    <script>
+    function likeJob(button) {
+        button.classList.toggle('clicked');
+    }
+</script>
+
+    <center><h1><b>Static count</b></h1></center>
+   <div class="static">
+    <div class="count-strip">
+        <div class="count-item">
+            <i class="fas fa-thumbs-up"></i>
+            <span>100 Likes</span>
+        </div>
+        <div class="count-item">
+            <i class="fas fa-comment"></i>
+            <span>50 Comments</span>
+        </div>
+        <div class="count-item">
+            <i class="fas fa-share-alt"></i>
+            <span>30 Shares</span>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+
+    <div class="footer">
+        <a href="#" class="logo"><img src="logo.jpeg" alt="Logo"></a>
+        <div class="address">
+            Address: Maharashtra,Pune,Baner.
+        </div>
+        <div class="nav">
+             <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Article</a>
+            <a href="#">Static count</a>
+            <a href="#">Job section</a>
+            <a href="#">Footer</a>
+        </div>
+    </div>
+    <script>
+        
+        function toggleReadMore(articleId) {
+            var articleText = document.getElementById(articleId);
+            if (articleText.classList.contains('full')) {
+                articleText.classList.remove('full');
+                event.target.innerText = 'Read More';
+            } else {
+                articleText.classList.add('full');
+                event.target.innerText = 'Read Less';
+            }
+        }
+    </script>
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("nav");
+            nav.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
