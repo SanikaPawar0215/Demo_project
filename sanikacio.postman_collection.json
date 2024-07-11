@@ -1,0 +1,1182 @@
+{
+	"info": {
+		"_postman_id": "5d7a5f5f-dcf7-46fd-999f-28d7cdfd31f4",
+		"name": "sanikacio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36915215"
+	},
+	"item": [
+		{
+			"name": "official_email_otp_send",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"1\",\r\n    \"name\" : \"bhaurao\",\r\n    \"official_email_id\" : \"bhauraowalve@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/official_email_otp_send/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"official_email_otp_send",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "official_email_otp_send",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"1\",\r\n    \"name\" : \"Bhaurao\",\r\n    \"official_email_id\" : \"bhauraowalve@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/official_email_otp_send/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"official_email_otp_send",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.24.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 11 Jul 2024 07:41:18 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "82"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "csrftoken=NOIhak7zo0WXRXZo9TyhUGeTl1VCsBbt; expires=Thu, 10 Jul 2025 07:41:18 GMT; Max-Age=31449600; Path=/; SameSite=Lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message_code\": 404,\n    \"message\": \"\\\"gmail.com\\\" is not allowed as official email id\"\n}"
+				}
+			]
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/signup/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"signup",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "signup",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/signup/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"signup",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.24.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 11 Jul 2024 07:42:43 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "csrftoken=NOIhak7zo0WXRXZo9TyhUGeTl1VCsBbt; expires=Thu, 10 Jul 2025 07:42:43 GMT; Max-Age=31449600; Path=/; SameSite=Lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message_code\": 404,\n    \"message\": \"Not found\"\n}"
+				}
+			]
+		},
+		{
+			"name": "loyalty_activity_of_user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMTg5Nywicm9sZSI6InN1cGVyYWRtaW4iLCJuYW1lIjoiVmlzaHdhcmEgTmFsYXdhZGUiLCJsb2NhdGlvbl9pZCI6IjciLCJleHAiOjE3MjY5OTkwOTUsImlhdCI6MTcxOTIyMzA5NX0.-QyRhNpdF65BiMWVZ981itJMOSD2z3B1mGW5VWMePTo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/loyalty_activity_of_user",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"loyalty_activity_of_user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "loyalty_activity_of_user",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/loyalty_activity_of_user",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"loyalty_activity_of_user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.24.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 11 Jul 2024 07:47:13 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "311"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, GET"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "csrftoken=NOIhak7zo0WXRXZo9TyhUGeTl1VCsBbt; expires=Thu, 10 Jul 2025 07:47:13 GMT; Max-Age=31449600; Path=/; SameSite=Lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message_code\": 200,\n    \"message\": \"Data received\",\n    \"data\": [\n        {\n            \"activity\": \"Login\",\n            \"point_for_activity\": 0,\n            \"date\": \"2024-06-24\"\n        },\n        {\n            \"activity\": \"Login\",\n            \"point_for_activity\": 0,\n            \"date\": \"2024-07-03\"\n        },\n        {\n            \"activity\": \"Login\",\n            \"point_for_activity\": 0,\n            \"date\": \"2024-07-08\"\n        },\n        {\n            \"activity\": \"Login\",\n            \"point_for_activity\": 0,\n            \"date\": \"2024-07-09\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "post_article_like",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMTg5Nywicm9sZSI6InN1cGVyYWRtaW4iLCJuYW1lIjoiVmlzaHdhcmEgTmFsYXdhZGUiLCJsb2NhdGlvbl9pZCI6IjciLCJleHAiOjE3MjY5OTkwOTUsImlhdCI6MTcxOTIyMzA5NX0.-QyRhNpdF65BiMWVZ981itJMOSD2z3B1mGW5VWMePTo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"post_type\": \"1\",\r\n    // For article use 0  and technology use 1\r\n    \"post_id\": 12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/post_article_like/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"post_article_like",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "post_article_like",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"post_type\": \"1\",\r\n    // For article use 0  and technology use 1\r\n    \"post_id\": 12\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/post_article_like/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"post_article_like",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.24.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 11 Jul 2024 07:49:21 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "63"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "csrftoken=NOIhak7zo0WXRXZo9TyhUGeTl1VCsBbt; expires=Thu, 10 Jul 2025 07:49:21 GMT; Max-Age=31449600; Path=/; SameSite=Lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message_code\": 404,\n    \"message\": \"Please provide correct post id\"\n}"
+				}
+			]
+		},
+		{
+			"name": "payment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMTg5Nywicm9sZSI6InN1cGVyYWRtaW4iLCJuYW1lIjoiVmlzaHdhcmEgTmFsYXdhZGUiLCJsb2NhdGlvbl9pZCI6IjciLCJleHAiOjE3MjY5OTkwOTUsImlhdCI6MTcxOTIyMzA5NX0.-QyRhNpdF65BiMWVZ981itJMOSD2z3B1mGW5VWMePTo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/payment/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"payment",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "payment",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/payment/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"payment",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.24.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 11 Jul 2024 07:50:25 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "279"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, GET"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "csrftoken=NOIhak7zo0WXRXZo9TyhUGeTl1VCsBbt; expires=Thu, 10 Jul 2025 07:50:25 GMT; Max-Age=31449600; Path=/; SameSite=Lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message_code\": 200,\n    \"message\": \"Data received\",\n    \"data\": {\n        \"name\": \"Vishwara Nalawade\",\n        \"membership_id\": \"CIOK287\",\n        \"email\": \"vishwarajnalawade@gmail.com\",\n        \"mobile_number\": \"7798430155\",\n        \"membership_validity\": \"2024-03-31\",\n        \"membership_status\": \"Renewal Approved -Paid\",\n        \"payment_status\": \"Paid\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "industrychapter/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMTg5Nywicm9sZSI6InN1cGVyYWRtaW4iLCJuYW1lIjoiVmlzaHdhcmEgTmFsYXdhZGUiLCJsb2NhdGlvbl9pZCI6IjciLCJleHAiOjE3MjY5OTkwOTUsImlhdCI6MTcxOTIyMzA5NX0.-QyRhNpdF65BiMWVZ981itJMOSD2z3B1mGW5VWMePTo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/industrychapter/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"industrychapter",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "industrychapter/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/industrychapter/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"industrychapter",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.24.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 11 Jul 2024 07:51:35 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "5234"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, GET"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "csrftoken=NOIhak7zo0WXRXZo9TyhUGeTl1VCsBbt; expires=Thu, 10 Jul 2025 07:51:35 GMT; Max-Age=31449600; Path=/; SameSite=Lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message_code\": 200,\n    \"message\": \"Data received\",\n    \"data\": {\n        \"industry\": [\n            {\n                \"id\": 1,\n                \"name\": \"Academia\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Aerospace\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Agriculture\"\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Airlines\"\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Alternative Medicine\"\n            },\n            {\n                \"id\": 6,\n                \"name\": \"Apparel & Fashion\"\n            },\n            {\n                \"id\": 7,\n                \"name\": \"Architecture & Planning\"\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Arts & Crafts\"\n            },\n            {\n                \"id\": 9,\n                \"name\": \"Automotive\"\n            },\n            {\n                \"id\": 10,\n                \"name\": \"Banking\"\n            },\n            {\n                \"id\": 11,\n                \"name\": \"Biotechnology\"\n            },\n            {\n                \"id\": 12,\n                \"name\": \"Broadcast Media\"\n            },\n            {\n                \"id\": 13,\n                \"name\": \"Building Materials\"\n            },\n            {\n                \"id\": 14,\n                \"name\": \"Business Supplies & Equipment\"\n            },\n            {\n                \"id\": 15,\n                \"name\": \"Chemicals\"\n            },\n            {\n                \"id\": 16,\n                \"name\": \"Civic & Social Organizations\"\n            },\n            {\n                \"id\": 18,\n                \"name\": \"Civil Service\"\n            },\n            {\n                \"id\": 19,\n                \"name\": \"Composites\"\n            },\n            {\n                \"id\": 21,\n                \"name\": \"Computer Games\"\n            },\n            {\n                \"id\": 22,\n                \"name\": \"Computer Hardware\"\n            },\n            {\n                \"id\": 23,\n                \"name\": \"Computer Networking\"\n            },\n            {\n                \"id\": 24,\n                \"name\": \"Computer Software\"\n            },\n            {\n                \"id\": 25,\n                \"name\": \"Construction\"\n            },\n            {\n                \"id\": 27,\n                \"name\": \"Consumer Electronics\"\n            },\n            {\n                \"id\": 28,\n                \"name\": \"Consumer Goods\"\n            },\n            {\n                \"id\": 29,\n                \"name\": \"Consumer Services\"\n            },\n            {\n                \"id\": 30,\n                \"name\": \"Cosmetics\"\n            },\n            {\n                \"id\": 31,\n                \"name\": \"Daycare\"\n            },\n            {\n                \"id\": 32,\n                \"name\": \"Defense Military\"\n            },\n            {\n                \"id\": 33,\n                \"name\": \"Design\"\n            },\n            {\n                \"id\": 34,\n                \"name\": \"E- learning\"\n            },\n            {\n                \"id\": 35,\n                \"name\": \"Education\"\n            },\n            {\n                \"id\": 36,\n                \"name\": \"Electrical Engineering\"\n            },\n            {\n                \"id\": 37,\n                \"name\": \"Energy\"\n            },\n            {\n                \"id\": 38,\n                \"name\": \"Entertainment\"\n            },\n            {\n                \"id\": 39,\n                \"name\": \"Environmental Services\"\n            },\n            {\n                \"id\": 40,\n                \"name\": \"Events Services\"\n            },\n            {\n                \"id\": 41,\n                \"name\": \"Facilities Services\"\n            },\n            {\n                \"id\": 42,\n                \"name\": \"Facility Management\"\n            },\n            {\n                \"id\": 43,\n                \"name\": \"Financial Services\"\n            },\n            {\n                \"id\": 44,\n                \"name\": \"Fishery\"\n            },\n            {\n                \"id\": 45,\n                \"name\": \"Food\"\n            },\n            {\n                \"id\": 46,\n                \"name\": \"Fundraising\"\n            },\n            {\n                \"id\": 47,\n                \"name\": \"Furniture\"\n            },\n            {\n                \"id\": 48,\n                \"name\": \"Gardening Landscaping\"\n            },\n            {\n                \"id\": 49,\n                \"name\": \"Geology\"\n            },\n            {\n                \"id\": 50,\n                \"name\": \"Glass & Ceramics\"\n            },\n            {\n                \"id\": 51,\n                \"name\": \"Graphic Design\"\n            },\n            {\n                \"id\": 52,\n                \"name\": \"Health & Fitness\"\n            },\n            {\n                \"id\": 53,\n                \"name\": \"Hospitality\"\n            },\n            {\n                \"id\": 54,\n                \"name\": \"Human Resources\"\n            },\n            {\n                \"id\": 55,\n                \"name\": \"Import & Export\"\n            },\n            {\n                \"id\": 56,\n                \"name\": \"Industrial Automation\"\n            },\n            {\n                \"id\": 57,\n                \"name\": \"Information Services\"\n            },\n            {\n                \"id\": 58,\n                \"name\": \"Information Technology & Services\"\n            },\n            {\n                \"id\": 59,\n                \"name\": \"Insurance\"\n            },\n            {\n                \"id\": 60,\n                \"name\": \"International Affairs\"\n            },\n            {\n                \"id\": 61,\n                \"name\": \"International Trade & Development\"\n            },\n            {\n                \"id\": 62,\n                \"name\": \"Internet\"\n            },\n            {\n                \"id\": 63,\n                \"name\": \"Investment Banking\"\n            },\n            {\n                \"id\": 64,\n                \"name\": \"Journalism\"\n            },\n            {\n                \"id\": 65,\n                \"name\": \"Legal Services\"\n            },\n            {\n                \"id\": 66,\n                \"name\": \"Leisure, Travel & Tourism\"\n            },\n            {\n                \"id\": 67,\n                \"name\": \"Logistics & Supply Chain\"\n            },\n            {\n                \"id\": 68,\n                \"name\": \"Luxury Goods & Jewelry\"\n            },\n            {\n                \"id\": 69,\n                \"name\": \"Machinery\"\n            },\n            {\n                \"id\": 70,\n                \"name\": \"Management Consulting\"\n            },\n            {\n                \"id\": 71,\n                \"name\": \"Maritime\"\n            },\n            {\n                \"id\": 72,\n                \"name\": \"Market Research\"\n            },\n            {\n                \"id\": 73,\n                \"name\": \"Marketing & Advertising\"\n            },\n            {\n                \"id\": 74,\n                \"name\": \"Mechanical Industrial Engineering\"\n            },\n            {\n                \"id\": 75,\n                \"name\": \"Media Production\"\n            },\n            {\n                \"id\": 76,\n                \"name\": \"Medical Devices\"\n            },\n            {\n                \"id\": 77,\n                \"name\": \"Medical Services\"\n            },\n            {\n                \"id\": 78,\n                \"name\": \"Medicinal Products\"\n            },\n            {\n                \"id\": 79,\n                \"name\": \"Metal Metalworking\"\n            },\n            {\n                \"id\": 80,\n                \"name\": \"Metrology Control Engineering\"\n            },\n            {\n                \"id\": 81,\n                \"name\": \"Mining & Metals\"\n            },\n            {\n                \"id\": 82,\n                \"name\": \"Motion Pictures\"\n            },\n            {\n                \"id\": 83,\n                \"name\": \"Museums & Cultural Institutions\"\n            },\n            {\n                \"id\": 84,\n                \"name\": \"Music\"\n            },\n            {\n                \"id\": 85,\n                \"name\": \"Nanotechnology\"\n            },\n            {\n                \"id\": 86,\n                \"name\": \"Non- Profit Organization\"\n            },\n            {\n                \"id\": 87,\n                \"name\": \"Nursing & Personal Care\"\n            },\n            {\n                \"id\": 88,\n                \"name\": \"Oil & Energy\"\n            },\n            {\n                \"id\": 89,\n                \"name\": \"Online Media\"\n            },\n            {\n                \"id\": 90,\n                \"name\": \"Others\"\n            },\n            {\n                \"id\": 91,\n                \"name\": \"Outsourcing Offshoring\"\n            },\n            {\n                \"id\": 92,\n                \"name\": \"Packaging & Containers\"\n            },\n            {\n                \"id\": 93,\n                \"name\": \"Paper & Forest Products\"\n            },\n            {\n                \"id\": 94,\n                \"name\": \"Pharmaceuticals\"\n            },\n            {\n                \"id\": 95,\n                \"name\": \"Photography\"\n            },\n            {\n                \"id\": 96,\n                \"name\": \"Plastics\"\n            },\n            {\n                \"id\": 97,\n                \"name\": \"Politics\"\n            },\n            {\n                \"id\": 98,\n                \"name\": \"Print Media\"\n            },\n            {\n                \"id\": 99,\n                \"name\": \"Printing\"\n            },\n            {\n                \"id\": 100,\n                \"name\": \"Process Management\"\n            },\n            {\n                \"id\": 101,\n                \"name\": \"Professional Training & Coaching\"\n            },\n            {\n                \"id\": 102,\n                \"name\": \"Psychology Psychotherapy\"\n            },\n            {\n                \"id\": 103,\n                \"name\": \"Public Health\"\n            },\n            {\n                \"id\": 104,\n                \"name\": \"Public Relations & Communications\"\n            },\n            {\n                \"id\": 105,\n                \"name\": \"Publishing\"\n            },\n            {\n                \"id\": 106,\n                \"name\": \"Railroad\"\n            },\n            {\n                \"id\": 107,\n                \"name\": \"Real Estate\"\n            },\n            {\n                \"id\": 108,\n                \"name\": \"Recreational Facilities & Services\"\n            },\n            {\n                \"id\": 109,\n                \"name\": \"Recycling & Waste Management\"\n            },\n            {\n                \"id\": 110,\n                \"name\": \"Renewables & Environment\"\n            },\n            {\n                \"id\": 111,\n                \"name\": \"Research\"\n            },\n            {\n                \"id\": 112,\n                \"name\": \"Restaurants & Food Service\"\n            },\n            {\n                \"id\": 113,\n                \"name\": \"Retail\"\n            },\n            {\n                \"id\": 114,\n                \"name\": \"Security & Investigations\"\n            },\n            {\n                \"id\": 115,\n                \"name\": \"Semiconductors\"\n            },\n            {\n                \"id\": 116,\n                \"name\": \"Shipbuilding\"\n            },\n            {\n                \"id\": 117,\n                \"name\": \"Sports\"\n            },\n            {\n                \"id\": 118,\n                \"name\": \"Staffing & Recruiting\"\n            },\n            {\n                \"id\": 119,\n                \"name\": \"Tax accountancy Auditing\"\n            },\n            {\n                \"id\": 120,\n                \"name\": \"Telecommunication\"\n            },\n            {\n                \"id\": 121,\n                \"name\": \"Textiles\"\n            },\n            {\n                \"id\": 122,\n                \"name\": \"Theater Stage Cinema\"\n            },\n            {\n                \"id\": 123,\n                \"name\": \"Timber\"\n            },\n            {\n                \"id\": 124,\n                \"name\": \"Traffic Engineering\"\n            },\n            {\n                \"id\": 125,\n                \"name\": \"Translation & Localization\"\n            },\n            {\n                \"id\": 126,\n                \"name\": \"Transport\"\n            },\n            {\n                \"id\": 127,\n                \"name\": \"Venture Capital & Private Equity\"\n            },\n            {\n                \"id\": 128,\n                \"name\": \"Veterinary\"\n            },\n            {\n                \"id\": 129,\n                \"name\": \"Welfare & Community Health\"\n            },\n            {\n                \"id\": 130,\n                \"name\": \"Wholesale\"\n            },\n            {\n                \"id\": 131,\n                \"name\": \"Wine & Spirits\"\n            },\n            {\n                \"id\": 132,\n                \"name\": \"Writing & Editing\"\n            }\n        ],\n        \"chapter\": [\n            {\n                \"id\": 1,\n                \"name\": \"Punjab\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Nagpur\"\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Mumbai\"\n            },\n            {\n                \"id\": 12,\n                \"name\": \"Dubai\"\n            },\n            {\n                \"id\": 14,\n                \"name\": \"Goa\"\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Delhi-NCR\"\n            },\n            {\n                \"id\": 9,\n                \"name\": \"Coimbatore\"\n            },\n            {\n                \"id\": 7,\n                \"name\": \"Bangalore\"\n            },\n            {\n                \"id\": 20,\n                \"name\": \"test\"\n            },\n            {\n                \"id\": 21,\n                \"name\": \"Test chapter after migration\"\n            },\n            {\n                \"id\": 15,\n                \"name\": \"Umarkhed\"\n            },\n            {\n                \"id\": 11,\n                \"name\": \"Hyderabad\"\n            },\n            {\n                \"id\": 6,\n                \"name\": \"Kerala\"\n            },\n            {\n                \"id\": 13,\n                \"name\": \"Kolkata\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Pune\"\n            },\n            {\n                \"id\": 10,\n                \"name\": \"Chennai\"\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Ahmedabad\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "withdraw_connection/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMTg5Nywicm9sZSI6InN1cGVyYWRtaW4iLCJuYW1lIjoiVmlzaHdhcmEgTmFsYXdhZGUiLCJsb2NhdGlvbl9pZCI6IjciLCJleHAiOjE3MjY5OTkwOTUsImlhdCI6MTcxOTIyMzA5NX0.-QyRhNpdF65BiMWVZ981itJMOSD2z3B1mGW5VWMePTo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"member_id\" : 776\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/withdraw_connection/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"withdraw_connection",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "withdraw_connection/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"member_id\" : 776\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/withdraw_connection/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"withdraw_connection",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.24.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 11 Jul 2024 07:52:54 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "csrftoken=NOIhak7zo0WXRXZo9TyhUGeTl1VCsBbt; expires=Thu, 10 Jul 2025 07:52:54 GMT; Max-Age=31449600; Path=/; SameSite=Lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message_code\": 404,\n    \"message\": \"Not found\"\n}"
+				}
+			]
+		},
+		{
+			"name": "network_accept_reject/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMTg5Nywicm9sZSI6InN1cGVyYWRtaW4iLCJuYW1lIjoiVmlzaHdhcmEgTmFsYXdhZGUiLCJsb2NhdGlvbl9pZCI6IjciLCJleHAiOjE3MjY5OTkwOTUsImlhdCI6MTcxOTIyMzA5NX0.-QyRhNpdF65BiMWVZ981itJMOSD2z3B1mGW5VWMePTo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"member_id\" : 788,\r\n    \"status\" : \"1\"  // 1 for accept and  2  for reject\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/network_accept_reject/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"network_accept_reject",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "network_accept_reject/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"member_id\" : 788,\r\n    \"status\" : \"1\"  // 1 for accept and  2  for reject\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/network_accept_reject/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"network_accept_reject",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.24.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 11 Jul 2024 07:55:18 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "csrftoken=NOIhak7zo0WXRXZo9TyhUGeTl1VCsBbt; expires=Thu, 10 Jul 2025 07:55:18 GMT; Max-Age=31449600; Path=/; SameSite=Lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message_code\": 404,\n    \"message\": \"Not found\"\n}"
+				}
+			]
+		},
+		{
+			"name": "change_password/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMTg5Nywicm9sZSI6InN1cGVyYWRtaW4iLCJuYW1lIjoiVmlzaHdhcmEgTmFsYXdhZGUiLCJsb2NhdGlvbl9pZCI6IjciLCJleHAiOjE3MjY5OTkwOTUsImlhdCI6MTcxOTIyMzA5NX0.-QyRhNpdF65BiMWVZ981itJMOSD2z3B1mGW5VWMePTo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"password\" : \"P@ssw0rd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/change_password/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"change_password",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "change_password/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\" : \"P@ssw0rd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/change_password/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"change_password",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.24.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 11 Jul 2024 07:56:46 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "72"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "csrftoken=NOIhak7zo0WXRXZo9TyhUGeTl1VCsBbt; expires=Thu, 10 Jul 2025 07:56:46 GMT; Max-Age=31449600; Path=/; SameSite=Lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message_code\": 200,\n    \"message\": \"Password updated successfully\",\n    \"data\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "events/",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/events/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"events",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.24.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 11 Jul 2024 07:59:17 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "101"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, GET"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "csrftoken=NOIhak7zo0WXRXZo9TyhUGeTl1VCsBbt; expires=Thu, 10 Jul 2025 07:59:17 GMT; Max-Age=31449600; Path=/; SameSite=Lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message_code\": 200,\n    \"message\": \"Data received\",\n    \"data\": {\n        \"upcoming_event_list\": [],\n        \"past_event_list\": []\n    }\n}"
+				}
+			]
+		}
+	]
+}
